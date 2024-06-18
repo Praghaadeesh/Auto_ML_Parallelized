@@ -62,6 +62,7 @@ def train_model(model_cls, params, X, y):
     model.fit(X, y)
     return model
 
+
 @ray.remote
 def cross_validate(model, X, y, cv=5):
     cv_scores = cross_val_score(model, X, y, cv=cv)
