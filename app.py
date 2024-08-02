@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 import itertools
 from sklearn.model_selection import cross_val_score
 import random
-
+from Feature_engineering import AutoFeatureEngineering
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
